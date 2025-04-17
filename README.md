@@ -12,7 +12,7 @@ Real-time AI-powered threat detection for Wi-Fi networks using ML and packet sni
 AI-ENHANCED-THREAT-DETECTION/
 ├── backend/              # Feature extraction, real-time sniffing
 ├── frontend/             # Streamlit dashboard
-├── models/               # Trained models, scalers, feature selectors
+├── models/               # Scaling the features, Training the model
 ├── requirements.txt      # All dependencies
 └── README.md             # Project documentation
 ```
