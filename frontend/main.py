@@ -6,7 +6,7 @@ import os
 import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils import preprocess_input, make_prediction
+from backend.utils import preprocess_input, make_prediction
 from backend.realtime_detector import sniff_packets_and_detect
 
 st.set_page_config(page_title="AI Cybersecurity Threat Detector", layout="wide")
