@@ -9,6 +9,6 @@ print(f"✅ Captured {len(packets)} packets.")
 features = extract_features(packets)
 
 df = pd.DataFrame([features])
-df.to_csv("models/sample_dataset2.csv", index=False)
+df.to_csv("models/sample_dataset3.csv", index=False)
 
-print("📄 Saved extracted features to models/sample_dataset2.csv")
+print("📄 Saved extracted features to models/sample_dataset3.csv")

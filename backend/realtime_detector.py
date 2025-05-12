@@ -3,12 +3,15 @@ import joblib
 import pandas as pd
 import subprocess
 import re
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from scapy.all import sniff
 from backend.feature_extraction import extract_features
 
-model = joblib.load("../models/threat_detection_model.pkl")
-scaler = joblib.load("../models/scaler.pkl")
-imputer = joblib.load("../models/imputer.pkl")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(base_dir, "../models/threat_detection_model.pkl"))
+scaler = joblib.load(os.path.join(base_dir, "../models/scaler.pkl"))
+imputer = joblib.load(os.path.join(base_dir, "../models/imputer.pkl"))
 
 def get_wifi_info():
     try:
